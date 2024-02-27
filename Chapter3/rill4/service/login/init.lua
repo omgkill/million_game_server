@@ -28,6 +28,7 @@ s.client.login = function(fd, msg, source)
 	--回应gate
 	local isok = skynet.call(gate, "lua", "sure_agent", fd, playerid, agent)
 	if not isok then
+		-- 要删除掉agentMgr的数据
 		return {"login", 1, "gate注册失败"}
 	end
     skynet.error("login succ "..playerid)
