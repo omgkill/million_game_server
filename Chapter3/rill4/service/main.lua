@@ -22,7 +22,7 @@ skynet.start(function()
 	end
 	--login
 	for i, v in pairs(nodecfg.login or {})  do
-	local srv = skynet.newservice("login","login", i)
+		local srv = skynet.newservice("login","login", i)
 		skynet.name("login"..i, srv)
 	end
 	--agentmgr

@@ -1,6 +1,8 @@
 local skynet = require "skynet"
 local cluster = require "skynet.cluster"
 
+-- 这个只是负责 lua消息的传递
+
 local M = {
 	--类型和id
 	name = "",

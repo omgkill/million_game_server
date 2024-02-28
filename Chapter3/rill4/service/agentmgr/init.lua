@@ -1,6 +1,10 @@
 local skynet = require "skynet"
 local s = require "service"
 
+-- 我们为什么需要这个类
+-- 管理玩家与agent的映射关系
+-- 相当于agent的处理（增删改）分离出来了，gate只保留agent的映射关系（查）
+
 --状态
 STATUS = {
 	LOGIN = 2,
